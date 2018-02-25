@@ -1,0 +1,146 @@
+﻿@model IEnumerable<BuildingFeedback.Models.Permit>
+
+@{
+    ViewData["Title"] = "Comment On Project";
+}
+
+<section class="building_info">
+    Project number 144560
+    Time left for comment: 8 days
+    <table class="progress-bar">
+        <tr>
+            <td>Permit submission</td>
+            <td>Initial city review</td>
+            <td>Public comment</td>
+            <td>Final city review</td>
+            <td>Construction</td>
+        </tr>
+        <tr>
+            <td bgcolor="#0066ff"></td>
+            <td bgcolor="#0066ff"></td>
+            <td bgcolor="#66ff99"></td>
+            <td bgcolor="#c0c0c0"></td>
+            <td bgcolor="#c0c0c0"></td>
+        </tr>
+    </table>
+    <h3>Building Info</h3>
+    <table class="ProjectBuilding">
+        <tr>
+            <td><b>Zone</b></td>
+            <td>Residential no more than 3000 feet</td>
+        </tr>
+        <tr>
+            <td><b>Number of units</b></td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td><b>Number of parking lots</b></td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td><b>Use</b></td>
+            <td>Single family apartment building</td>
+        </tr>
+        <tr>
+            <td><b>Demolition</b></td>
+            <td>Existing 3 storey apartment</td>
+        </tr>
+        <tr>
+            <td><b>Building Layout</b></td>
+            <td><img src="C:\Users\Anthony Wiratama\Downloads\MapForNotice27118.jpg" /></td>
+        </tr>
+    </table>
+
+
+    <div class="list_container">
+        <table>
+            <tr>
+                <td><h3>Please add comment about the building plan.</h3></td>
+            </tr>
+            <tr>
+                <td> <textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="effects">
+        <h1>Expected effects</h1>
+        <h4>Here, you will comment the effects by section.</h4>
+        <table class="ProjectEffect">
+            <tr>
+                <td><b>Air quality</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Noise</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Water quality</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Light/glare</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Transportation and Traffic</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Aesthetics</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Plants</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>History and Cultural Preservation</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div>
+        <p>Please enter your e-mail address if you would like to receive future notifications about this project</p>
+        <textarea class="form-control input-lg" placeholder="E-mail address"></textarea>
+    </div>
+    <div class="button_container">
+        <p>When you are done, click the button below to submit your comment</p>
+        <a asp-area="" asp-controller="Projects" asp-action="Index" class="btn projects_button">Submit</a>
+    </div>
+</section>
