@@ -1,0 +1,177 @@
+﻿@model IEnumerable<BuildingFeedback.Models.Permit>
+
+@{
+    ViewData["Title"] = "Comment On Project";
+}
+
+<section class="building_info">
+    Project number 144560
+    Time left for comment: 8 days<br />
+    <ul class="timeline" id="timeline">
+        <li class="li complete">
+            <div class="timestamp">
+                <span class="phase">Application Submitted</span>
+                <span class="date">12/28/2017<span>
+            </div>
+            <div class="status">
+                <h4>Complete</h4>
+            </div>
+        </li>
+        <li class="li complete">
+            <div class="timestamp">
+                <span class="phase">Initial City Review</span>
+                <span class="date">1/15/2018<span>
+            </div>
+            <div class="status">
+                <h4>Complete</h4>
+            </div>
+        </li>
+        <li class="li ongoing">
+            <div class="timestamp">
+                <span class="phase">Public Feedback</span>
+                <span class="date">1/31/2018<span>
+            </div>
+            <div class="status">
+                <h4>Ongoing</h4>
+            </div>
+        </li>
+        <li class="li">
+            <div class="timestamp">
+                <span class="author">Final City Decision</span>
+                <span class="date">TBD<span>
+            </div>
+            <div class="status">
+                <h4> Incomplete </h4>
+            </div>
+        </li>
+    </ul><br />
+    <h3>Building Info</h3>
+    <table class="ProjectBuilding">
+        <tr>
+            <td><b>Zone</b></td>
+            <td>Residential no more than 3000 feet</td>
+        </tr>
+        <tr>
+            <td><b>Number of units</b></td>
+            <td>71 </td>
+        </tr>
+        <tr>
+            <td><b>Number of storeys</b></td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td><b>Number of parking lots</b></td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td><b>Use</b></td>
+            <td>Efficiency apartment building</td>
+        </tr>
+        <tr>
+            <td><b>Demolition</b></td>
+            <td>Existing 3 storey apartment</td>
+        </tr>
+        <tr>
+            <td><b>Building Layout</b></td>
+            <td><img src="~/images/MapForNotice27118.jpg" /></td>
+        </tr>
+        <tr>
+            <td><b>Planned exterior</b></td>
+            <td><img src="~/images/exterior.jpg" /></td>
+        </tr>
+    </table>
+    <h3>Address</h3><br />
+    <div style="width: 400"><iframe width="400" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=225%20Harvard%20Ave%2C%20Seattle%2CWA+()&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><br />
+
+    <div class="list_container">
+        <table>
+            <tr>
+                <td><h3>Please add comment about the building plan.</h3></td>
+            </tr>
+            <tr>
+                <td> <textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="effects">
+        <h1>Expected impacts</h1>
+        <h4>Here, you will comment the effects by section.</h4>
+        <table class="ProjectImpact">
+            <tr>
+                <td><b>Air quality</b></td>
+                <td>Minimal impact other than dust due to short-term construction</td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Noise</b></td>
+                <td>Heavy equipment and crane at daytime during exterior construction. Nighttime minimal noise during interior construction.</td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Water quality</b></td>
+                <td>Not applicable</td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Light/glare</b></td>
+                <td>All glass. Lobby lights will be on 24 hours; unit lights are up to residents.</td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Transportation and Traffic</b></td>
+                <td>Street parking within 30 feet of property will be closed during construction for at least 6 months.</td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Aesthetics</b></td>
+                <td>Building will be 80 feet tall with a combination of white-paint concrete wall and corner windows.</td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Plants</b></td>
+                <td>Small garden at both sides of entrance to walkway</td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>History and Cultural Preservation</b></td>
+                <td>Not applicable</td>
+            </tr>
+            <tr>
+                <td>Feedback: </td>
+                <td><textarea class="form-control input-lg" placeholder="Comments"></textarea></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div>
+        <p>Please enter your e-mail address if you would like to receive future notifications about this project</p>
+        <textarea class="form-control input-lg" placeholder="E-mail address"></textarea>
+    </div>
+    <div class="button_container">
+        <p>When you are done, click the button below to submit your comment</p>
+        <a asp-area="" asp-controller="Projects" asp-action="Index" class="btn projects_button">Submit</a>
+    </div>
+</section>
